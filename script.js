@@ -4,8 +4,8 @@ function onsubmitregister() {
 
     if (user === "" || pass === "") {
         alert("กรุณากรอกข้อมูลให้ครบ!");
-        return false; // หยุดการส่งฟอร์ม
+        return false;
     }
 
-    return true; // ส่งฟอร์มได้
+    return true;
 }
