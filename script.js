@@ -1,6 +1,11 @@
 function onsubmitregister() {
-    const name = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const user = document.getElementById("username").value.trim();
+    const pass = document.getElementById("password").value.trim();
 
-    alert("Username: " + name + "\nPassword: " +password)
+    if (user === "" || pass === "") {
+        alert("กรุณากรอกข้อมูลให้ครบ!");
+        return false; // หยุดการส่งฟอร์ม
+    }
+
+    return true; // ส่งฟอร์มได้
 }

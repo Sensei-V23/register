@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="register-box">
         <h1>Register</h1>
-        <form action="register.php" method="post">
+
+        <form action="register.php" method="post" onsubmit="return onsubmitregister()">
             <input type="text" name="username" id="username" placeholder="Username">
             <input type="password" name="password" id="password" placeholder="Password">
 
-            <button onclick="onsubmitregister()" type="submit">Register</button>
+            <button type="submit">Register</button>
         </form>
     </div>
 
